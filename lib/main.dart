@@ -110,9 +110,9 @@ class _MyAppState extends State<MyApp> {
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.message), title: Text('留言墙')),
+                  icon: Icon(Icons.assignment), title: Text('留言墙')),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.comment), title: Text('聊天')),
+                  icon: Icon(Icons.sms), title: Text('聊天')),
             ],
             currentIndex: _selectedIndex,
             fixedColor: Color(0xdd0ec5c9),
