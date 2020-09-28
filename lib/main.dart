@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:demo/%E4%BB%BF%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9/main_chat.dart';
 import 'package:demo/%E7%80%91%E5%B8%83%E6%B5%81/main.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/homepage/ScaffoldRoute.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   //底部导航栏
-  var bottmBar = [ScaffoldRoute(title: "Flutter Demo"), Message()];
+  var bottmBar = [ScaffoldRoute(title: "Flutter Demo"), LeaveMessage(),MyWeChatApp()];
   //底部导航栏 选择
   int _selectedIndex = 0;
 
@@ -107,11 +108,11 @@ class _MyAppState extends State<MyApp> {
            BottomNavigationBar(
             // 底部导航
             items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
+              BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.business), title: Text('留言墙')),
+                  icon: Icon(Icons.message), title: Text('留言墙')),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.school), title: Text('School')),
+                  icon: Icon(Icons.comment), title: Text('聊天')),
             ],
             currentIndex: _selectedIndex,
             fixedColor: Color(0xdd0ec5c9),
